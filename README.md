@@ -9,6 +9,7 @@
 
 -------
 
+
 ## What does it do
 
 Nacos (official site: [nacos.io](https://nacos.io)) is an easy-to-use platform designed for dynamic service discovery and configuration and service management. It helps you to build cloud native applications and microservices platform easily.
@@ -61,6 +62,10 @@ cd nacos/bin
 On the **Linux/Unix/Mac** platform, run the following command to start server with standalone mode: 
 ```sh
 sh startup.sh -m standalone
+```
+### nacos目录下执行该命令打包
+```
+mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U
 ```
 
 On the **Windows** platform, run the following command to start server with standalone mode.  Alternatively, you can also double-click the `startup.cmd` to run NacosServer.
